@@ -40,16 +40,26 @@
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { background: var(--bg); }
 body {
   margin: 0;
   color: var(--ink);
   font: 17px/1.6 var(--text);
+  min-height: 100vh;
+}
+/* The stage lives on its own fixed layer instead of `background-attachment: fixed`:
+   Safari repaints a fixed background inside any filtered element's layer, which
+   showed up as a light box with a clipped drop shadow around the phone screenshots. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background:
     radial-gradient(60vw 60vw at 85% -10%, var(--glow-1), transparent 60%),
     radial-gradient(60vw 60vw at -10% 70%, var(--glow-2), transparent 60%),
     linear-gradient(180deg, var(--bg), var(--bg-2));
-  background-attachment: fixed;
-  min-height: 100vh;
 }
 img { max-width: 100%; display: block; }
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
