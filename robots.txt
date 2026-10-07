@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexriakhin.com/Metronome/sitemap.xml
