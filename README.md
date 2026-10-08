@@ -15,7 +15,7 @@ python3 tools/build_site.py          # rebuild every page after editing src/
 python3 -m http.server 8765          # preview at http://localhost:8765
 ```
 
-The App Store listing links to `support.html` and `privacy.html`. Keep those paths stable. Replace the "Coming soon" buttons in `src/index.html` with the App Store link once the app is live. Update `privacy.html` before shipping microphone timing feedback.
+The App Store listing links to `support.html` and `privacy.html`. Keep those paths stable. Replace the "Coming soon" buttons in `src/index.html` with the App Store link once the app is live.
 
 ## Screenshots
 

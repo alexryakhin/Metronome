@@ -38,7 +38,7 @@ SHELL = """<!doctype html>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/img/icon.png" alt="" width="34" height="34">Metronome <small>BPM &amp; speed trainer</small></a>
+    <a class="brand" href="./"><img src="assets/img/icon.png" alt="" width="34" height="34">Metronome <small>the metronome that listens</small></a>
     <nav aria-label="Main">
       <a href="./#features"{nav_features}>Features</a>
       <a href="support.html"{nav_support}>Support</a>
